@@ -1,0 +1,10 @@
+.nav{
+width: 100%;
+background-color: dodgerblue;
+display: inline-block;
+}
+.nav__p{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
