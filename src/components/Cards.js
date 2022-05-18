@@ -3,7 +3,7 @@ import './Cards.css'
 
 function Cards({ data }) {
 
-  const datos= data.arrayDatos;
+  const datos= data;
 
   return (
     <div className='containerCards'>

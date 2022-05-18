@@ -1,6 +1,7 @@
 
-const databaseCards= {
-    "arrayDatos": [{
+{
+    "arrayDatos": [
+    {
         "Task": "Hacer la colada",
         "TaskDescription": "Tener cuidado con la ropa de color",
         "Priority": "Medium",
@@ -14,4 +15,3 @@ const databaseCards= {
     }
   ]
 }
-export default databaseCards;
