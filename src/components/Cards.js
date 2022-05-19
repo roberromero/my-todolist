@@ -9,7 +9,11 @@ function Cards({ data }) {
     <div className='containerCards'>
        {
          datos.map(item=>{
-           return <p key={item['id']}>{item['Task']}</p>
+           return <div className='containerCard' key={item['id']}>
+                    <p><b>Task:</b> {item['Task']}</p>
+                    <p><b>Task description:</b> {item['TaskDescription']}</p>
+                    <button>Delete</button>
+                  </div>
          })
        }
     </div>

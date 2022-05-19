@@ -4,13 +4,13 @@
     {
         "Task": "Hacer la colada",
         "TaskDescription": "Tener cuidado con la ropa de color",
-        "Priority": "Medium",
+        "Priority": "medium",
         "id": 1
     },
     {
         "Task": "Bañar a los niños",
         "TaskDescription": "Bañarlos antes de las 7",
-        "Priority": "alta",
+        "Priority": "high",
         "id": 2
     }
   ]
