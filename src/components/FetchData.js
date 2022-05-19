@@ -8,7 +8,6 @@ function FetchData() {
         .then(response => response.json())
         .then(dat => {
             setData(dat);
-            
         } );
 
 }, []);
