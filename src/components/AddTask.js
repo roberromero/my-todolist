@@ -15,7 +15,7 @@ const AddTask = (data) => {
         .catch((error) => {
         console.error('Error:', error);
         });
-  
+        window.location.reload();
 }
 
 export default AddTask

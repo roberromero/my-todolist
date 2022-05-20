@@ -1,34 +1,10 @@
 {
   "arrayDatos": [
     {
-      "Task": "Hacer la colada",
-      "TaskDescription": "Tener cuidado con la ropa de color",
-      "Priority": "medium",
-      "id": 1
-    },
-    {
-      "Task": "Bañar a los niños",
-      "TaskDescription": "Bañarlos antes de las 7",
-      "Priority": "high",
-      "id": 2
-    },
-    {
-      "Task": "Hola",
-      "TaskDescription": "asds as das das dasd as \nasd asdasd\n asdas\n da sd",
-      "Priority": "high",
-      "id": 3
-    },
-    {
-      "Task": "Hola",
-      "TaskDescription": "asds as das das dasd as \nasd asdasd\n asdas\n da sd",
-      "Priority": "high",
-      "id": 4
-    },
-    {
-      "Task": "",
-      "TaskDescription": "",
+      "Task": "Roberto",
+      "TaskDescription": "¿Qué tal?",
       "Priority": "low",
-      "id": 5
+      "id": 1
     }
   ]
 }

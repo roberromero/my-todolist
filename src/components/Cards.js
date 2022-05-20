@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Cards.css'
-import FetchData from './FetchData';
 
 function Cards({ data }) {
 
   const datos= data;
   const handleDelete = (e) => {
-      const elemento = e.target.parentElement.id
-    console.log(elemento);      
-    // ESTOY A PUNTO................
+    const idToDelete= e.target.parentElement.id;
+    console.log(idToDelete);  
+     
+    fetch('http://localhost:7000/arrayDatos/' + idToDelete, {
+      method: 'DELETE', 
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+      })
+      .then(response => response.json())
+      .catch((error) => {
+      console.error('Error:', error);
+      });
+      window.location.reload();
+    //MÉTODO FILTER PARA ENCONTRAR EL OBJETO CON EL ID QUE QUERAMOS
+    //   const newArray = data.filter(elemento => {
+    //    return elemento.id != idToDelete;
+    // })
   }
 
   return (
