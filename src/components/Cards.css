@@ -4,3 +4,18 @@
     padding: 5px;
     margin: 5px;
 }
+.containerCard__priority{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+    width: 30%;
+}
+.containerCard__delete{
+    cursor: pointer;
+    display: block;
+}

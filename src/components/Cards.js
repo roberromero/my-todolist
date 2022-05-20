@@ -33,7 +33,8 @@ function Cards({ data }) {
            return <div className='containerCard' value={item['id']} key={item['id']} id={item['id']}>
                     <p><b>Task:</b> {item['Task']}</p>
                     <p><b>Task description:</b> {item['TaskDescription']}</p>
-                    <button onClick={handleDelete}>Delete</button>
+                    <b>Priority: <p className='containerCard__priority'>{item['Priority']}</p></b>
+                    <button className='containerCard__delete' onClick={handleDelete}>Delete</button>
                   </div>
          })
        }
