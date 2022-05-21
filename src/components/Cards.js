@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
 import './Cards.css'
 
 function Cards({ data }) {
 
-  const datos= data;
+  // const datos= data;
   const handleDelete = (e) => {
     const idToDelete= e.target.parentElement.id;
-    console.log(idToDelete);  
+    console.log(idToDelete);
      
     fetch('http://localhost:7000/arrayDatos/' + idToDelete, {
       method: 'DELETE', 
@@ -29,7 +28,7 @@ function Cards({ data }) {
   return (
     <div className='containerCards'>
        {
-         datos.map(item=>{
+         data.map(item=>{
            return <div className='containerCard' value={item['id']} key={item['id']} id={item['id']}>
                     <p><b>Task:</b> {item['Task']}</p>
                     <p><b>Task description:</b> {item['TaskDescription']}</p>

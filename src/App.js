@@ -1,12 +1,21 @@
 import Nav from './components/Nav';
 import Cards from './components/Cards';
-import FetchData from './components/FetchData';
 import Form from './components/Form';
+import { useEffect, useState } from 'react';
 
 function App() {
 
   const nam = "Roberto";
-  const data = FetchData();
+  const [data, setData] = useState(null);
+  useEffect(()=>{
+    fetch('http://localhost:7000/arrayDatos')
+        .then(response => {return response.json()})
+        .then(dat => {
+            setData(dat);
+        } );
+  }, [])
+  
+ 
   
   return (
     <div className="App">

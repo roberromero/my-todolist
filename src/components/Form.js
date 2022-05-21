@@ -1,11 +1,11 @@
 import './Form.css'
-import { useState }from 'react'
+import { useState } from 'react';
 import AddTask from './AddTask';
 function Form() {
-
     const [task, setTask] = useState("");
     const [taskDescription, setTaskDescription] = useState("");
     const [priority, setPriority] = useState("low");
+    
 
     const handleTask= (e) => setTask(e.target.value);
     const handleTaskDescription = (e) => setTaskDescription(e.target.value);
