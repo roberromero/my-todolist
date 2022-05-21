@@ -26,17 +26,16 @@ function Form() {
   <label htmlFor="Task">Task:</label>
     <input className='formAdd__elementos' type="text" id="Task" name="Task" onChange={handleTask}/>
   <label htmlFor="TaskDescription">Task description: </label>
-    <textarea className='formAdd__elementos' id="TaskDescription" rows="4" cols="50" name="TaskDescription" onChange={handleTaskDescription}/>
+    <textarea className='formAdd__elementos' id="TaskDescription" rows="4" cols="30" name="TaskDescription" onChange={handleTaskDescription}/>
   
   <label htmlFor="Priority">Choose priority:</label>
     <select className='formAdd__elementos' name="Priority" id="Priority" onChange={handlePriority}>
         <option value="low">Low</option>
         <option value="medium">Medium</option>
         <option value="high">High</option>
-
     </select>
 
-    <input className='formAdd__elementos' type="submit" />
+    <input className='formAdd__elementos' id="addSubmit" type="submit" value="Add"/>
 </form> 
     </div>
   )

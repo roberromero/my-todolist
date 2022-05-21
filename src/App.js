@@ -11,12 +11,15 @@ function App() {
   
   
   return (
+    
     <div className="App">
         <Nav name={name}/>
-        <Form />
-        {isLoading && <div>Loading...</div>}
-        {fetchData && <div>{fetchData}</div>}
-        {data && <Cards data={data}/>}
+        <div className='App__home'>
+          <Form />
+          {isLoading && <div style={{textAlign:"center"}}>Loading...</div>}
+          {fetchData && <div>{fetchData}</div>}
+          {data && <Cards data={data}/>}
+        </div>
     </div>
   );
 }

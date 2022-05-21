@@ -1,9 +1,28 @@
 .formAdd{
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 10px auto;
     padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .formAdd__elementos{
     display: block;
     margin: 3px;
+}
+#Priority{
+    max-width: 60px;
+}
+#addSubmit{
+    cursor: pointer;
+    display: block;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 16px;
 }
