@@ -6,7 +6,7 @@ import useFetch from './components/useFetch';
 
 function App() {
 
-  const [name, setName] = useState("Rob");
+  const [name, setName] = useState("Roberto.");
   const { data, isLoading, fetchData } = useFetch('http://localhost:7000/arrayDatos');
   
   
