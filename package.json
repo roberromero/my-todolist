@@ -2,7 +2,7 @@
   "name": "my-todolist",
   "version": "0.1.0",
   "private": true,
-  "homepage": "my-todolist",
+  "homepage": "https://roberromero.github.io/my-todolist/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
@@ -16,7 +16,7 @@
     "yarn": "^1.22.19"
   },
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
